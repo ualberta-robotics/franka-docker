@@ -1,0 +1,1 @@
+/home/user/franka-docker/franka_ws/src/franky_msgs/msg/GripperGrasp.msg

@@ -1,0 +1,4 @@
+franky-panda
+numpy
+scipy
+setuptools

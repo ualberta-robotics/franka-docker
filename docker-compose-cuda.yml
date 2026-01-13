@@ -1,0 +1,33 @@
+services:
+  franka-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - USER_UID=1003
+        - USER_GID=1003
+    container_name: franka-docker
+    network_mode: "host"
+    privileged: true
+    command: /bin/bash
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../franka-docker:/home/user/franka-docker
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /etc/udev/rules.d:/etc/udev/rules.d
+    environment:
+      QT_X11_NO_MITSHM: 1
+      DISPLAY: $DISPLAY
+    cap_add:
+      - SYS_NICE
+    ulimits:
+      rtprio: 99
+      rttime: -1
+      memlock: 8428281856
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1

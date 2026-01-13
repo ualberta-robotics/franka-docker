@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from franky_msgs/msg/GripperState.msg
+// generated code does not contain a copyright notice
+
+
+module franky_msgs {
+  module msg {
+    struct GripperState {
+      double width;
+
+      boolean is_grasped;
+    };
+  };
+};

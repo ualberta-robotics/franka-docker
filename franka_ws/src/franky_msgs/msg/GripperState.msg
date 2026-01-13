@@ -1,0 +1,2 @@
+float64 width
+bool is_grasped

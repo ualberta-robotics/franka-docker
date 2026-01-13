@@ -1,0 +1,323 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Using numpy include directory: /usr/local/lib/python3.10/dist-packages/numpy/core/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/franka-docker/franka_ws/build/franky_msgs
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_symlink_franky_msgs
+running egg_info
+writing franky_msgs.egg-info/PKG-INFO
+writing dependency_links to franky_msgs.egg-info/dependency_links.txt
+writing top-level names to franky_msgs.egg-info/top_level.txt
+reading manifest file 'franky_msgs.egg-info/SOURCES.txt'
+writing manifest file 'franky_msgs.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_franky_msgs_egg
+[  2%] Built target franky_msgs__cpp
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_generator_c[0m
+[  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  8%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_c.dir/rosidl_generator_c/franky_msgs/msg/detail/cartesian_move__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_c.dir/rosidl_generator_c/franky_msgs/msg/detail/cartesian_velocity__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_c.dir/rosidl_generator_c/franky_msgs/msg/detail/joint_velocity__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_c.dir/rosidl_generator_c/franky_msgs/msg/detail/joint_move__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_c.dir/rosidl_generator_c/franky_msgs/msg/detail/gripper_state__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_c.dir/rosidl_generator_c/franky_msgs/srv/detail/set_dynamics_factor__functions.c.o[0m
+[ 16%] [32m[1mLinking C shared library libfranky_msgs__rosidl_generator_c.so[0m
+[ 16%] Built target franky_msgs__rosidl_generator_c
+[ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 21%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_cpp[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/franky_msgs/msg/cartesian_velocity__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/franky_msgs/msg/joint_velocity__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/franky_msgs/srv/set_dynamics_factor__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/franky_msgs/msg/cartesian_move__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/franky_msgs/msg/joint_move__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/franky_msgs/msg/gripper_state__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_introspection_cpp[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/franky_msgs/msg/detail/cartesian_velocity__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/franky_msgs/msg/detail/joint_velocity__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/franky_msgs/msg/detail/joint_move__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/franky_msgs/msg/detail/gripper_state__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/franky_msgs/srv/detail/set_dynamics_factor__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/franky_msgs/msg/detail/cartesian_move__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/franky_msgs/msg/detail/dds_fastrtps/joint_move__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/franky_msgs/msg/detail/dds_fastrtps/cartesian_move__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/franky_msgs/msg/detail/dds_fastrtps/joint_velocity__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/franky_msgs/msg/detail/dds_fastrtps/gripper_state__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/franky_msgs/msg/detail/dds_fastrtps/cartesian_velocity__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/franky_msgs/srv/detail/dds_fastrtps/set_dynamics_factor__type_support.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_c[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/franky_msgs/msg/cartesian_velocity__type_support.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/franky_msgs/msg/cartesian_move__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/franky_msgs/msg/joint_move__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/franky_msgs/msg/joint_velocity__type_support.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/franky_msgs/msg/gripper_state__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/franky_msgs/srv/set_dynamics_factor__type_support.cpp.o[0m
+[ 56%] [32m[1mLinking CXX shared library libfranky_msgs__rosidl_typesupport_c.so[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_introspection_c[0m
+[ 57%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/franky_msgs/msg/detail/cartesian_move__type_support.c.o[0m
+[ 59%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/franky_msgs/msg/detail/cartesian_velocity__type_support.c.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/franky_msgs/msg/detail/joint_move__type_support.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/franky_msgs/msg/detail/joint_velocity__type_support.c.o[0m
+[ 64%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/franky_msgs/msg/detail/gripper_state__type_support.c.o[0m
+[ 64%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/franky_msgs/srv/detail/set_dynamics_factor__type_support.c.o[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_fastrtps_c[0m
+[ 66%] [32m[1mLinking CXX shared library libfranky_msgs__rosidl_typesupport_cpp.so[0m
+[ 66%] Built target franky_msgs__rosidl_typesupport_c
+[ 67%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/franky_msgs/msg/detail/cartesian_move__type_support_c.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/franky_msgs/msg/detail/cartesian_velocity__type_support_c.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/franky_msgs/msg/detail/joint_move__type_support_c.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/franky_msgs/msg/detail/joint_velocity__type_support_c.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/franky_msgs/msg/detail/gripper_state__type_support_c.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/franky_msgs/srv/detail/set_dynamics_factor__type_support_c.cpp.o[0m
+[ 76%] [32m[1mLinking C shared library libfranky_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 76%] Built target franky_msgs__rosidl_typesupport_cpp
+[ 76%] Built target franky_msgs__rosidl_typesupport_introspection_c
+[ 77%] [32m[1mLinking CXX shared library libfranky_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 78%] [32m[1mLinking CXX shared library libfranky_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 78%] Built target franky_msgs__rosidl_typesupport_introspection_cpp
+[ 80%] [32m[1mLinking CXX shared library libfranky_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 80%] Built target franky_msgs__rosidl_typesupport_fastrtps_cpp
+[ 80%] Built target franky_msgs__rosidl_typesupport_fastrtps_c
+[ 80%] Built target franky_msgs
+[ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 81%] Built target franky_msgs__py
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_generator_py[0m
+[ 83%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_py.dir/rosidl_generator_py/franky_msgs/msg/_cartesian_move_s.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_py.dir/rosidl_generator_py/franky_msgs/msg/_cartesian_velocity_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_py.dir/rosidl_generator_py/franky_msgs/msg/_joint_move_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_py.dir/rosidl_generator_py/franky_msgs/msg/_joint_velocity_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_py.dir/rosidl_generator_py/franky_msgs/msg/_gripper_state_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_generator_py.dir/rosidl_generator_py/franky_msgs/srv/_set_dynamics_factor_s.c.o[0m
+[ 91%] [32m[1mLinking C shared library rosidl_generator_py/franky_msgs/libfranky_msgs__rosidl_generator_py.so[0m
+[ 91%] Built target franky_msgs__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target franky_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[ 94%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/franky_msgs/_franky_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/franky_msgs/_franky_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/franky_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/franky_msgs/_franky_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/franky_msgs/franky_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/franky_msgs/franky_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/franky_msgs/franky_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target franky_msgs__rosidl_typesupport_introspection_c__pyext
+[100%] Built target franky_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target franky_msgs__rosidl_typesupport_c__pyext
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/ament_index/resource_index/rosidl_interfaces/franky_msgs
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/cartesian_move.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/cartesian_velocity.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__functions.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__struct.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__type_support.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__functions.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__struct.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__type_support.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__functions.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__struct.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__type_support.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__functions.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__struct.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__type_support.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__functions.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__struct.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__type_support.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/gripper_state.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/joint_move.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/joint_velocity.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__functions.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__struct.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__type_support.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/set_dynamics_factor.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/library_path.sh
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/library_path.dsv
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__rosidl_typesupport_introspection_c.h
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/cartesian_move.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/cartesian_velocity.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__builder.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__struct.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__traits.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__type_support.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__builder.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__struct.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__traits.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__type_support.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__builder.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__struct.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__traits.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__type_support.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__builder.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__struct.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__traits.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__type_support.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__builder.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__struct.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__traits.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__type_support.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/gripper_state.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/joint_move.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/joint_velocity.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__builder.hpp
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__struct.hpp
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__traits.hpp
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__type_support.hpp
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/set_dynamics_factor.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_move__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/cartesian_velocity__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/gripper_state__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_move__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/msg/detail/joint_velocity__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/include/franky_msgs/franky_msgs/srv/detail/set_dynamics_factor__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/pythonpath.sh
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs-0.1.0-py3.10.egg-info/top_level.txt
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/__init__.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/_franky_msgs_s.ep.rosidl_typesupport_c.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/_franky_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/_franky_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/franky_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/franky_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/franky_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/libfranky_msgs__rosidl_generator_py.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/__init__.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_cartesian_move.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_cartesian_move_s.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_cartesian_velocity.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_cartesian_velocity_s.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_gripper_state.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_gripper_state_s.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_joint_move.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_joint_move_s.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_joint_velocity.py
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_joint_velocity_s.c
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/srv/__init__.py
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/srv/_set_dynamics_factor.py
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/srv/_set_dynamics_factor_s.c
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/franky_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/franky_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/franky_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/CartesianMove.idl
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/CartesianVelocity.idl
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/JointMove.idl
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/JointVelocity.idl
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/GripperState.idl
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/srv/SetDynamicsFactor.idl
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/CartesianMove.msg
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/CartesianVelocity.msg
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/JointMove.msg
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/JointVelocity.msg
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/msg/GripperState.msg
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/srv/SetDynamicsFactor.srv
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/srv/SetDynamicsFactor_Request.msg
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/srv/SetDynamicsFactor_Response.msg
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/ament_index/resource_index/package_run_dependencies/franky_msgs
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/ament_index/resource_index/parent_prefix_path/franky_msgs
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/path.sh
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/environment/path.dsv
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/local_setup.bash
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/local_setup.sh
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/local_setup.zsh
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/local_setup.dsv
+-- Symlinking: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/package.dsv
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/ament_index/resource_index/packages/franky_msgs
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgsConfig.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgsConfig-version.cmake
+-- Up-to-date symlink: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/package.xml
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_generator_c.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_generator_c.so" to ""
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_typesupport_cpp.so" to ""
+Listing '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/__init__.py'...
+Listing '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/__init__.py'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_cartesian_move.py'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_cartesian_velocity.py'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_gripper_state.py'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_joint_move.py'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/msg/_joint_velocity.py'...
+Listing '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/srv'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/srv/__init__.py'...
+Compiling '/home/user/franka-docker/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages/franky_msgs/srv/_set_dynamics_factor.py'...
+-- Installing: /home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_generator_py.so
+-- Set runtime path of "/home/user/franka-docker/franka_ws/install/franky_msgs/lib/libfranky_msgs__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/franky_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/user/franka-docker/franka_ws/install/franky_msgs/share/franky_msgs/cmake/export_franky_msgs__rosidl_generator_pyExport-noconfig.cmake

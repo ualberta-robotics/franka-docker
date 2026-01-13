@@ -1,0 +1,18 @@
+[0.233s] Invoking command in '/home/user/franka-docker/franka_ws/build/franky_ros': PYTHONPATH=/home/user/franka-docker/franka_ws/build/franky_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/franka-docker/franka_ws/install/franky_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/user/franka-docker/franka_ws/build/franky_ros/build --no-deps symlink_data
+[0.323s] running develop
+[0.364s] running egg_info
+[0.365s] writing franky_ros.egg-info/PKG-INFO
+[0.365s] writing dependency_links to franky_ros.egg-info/dependency_links.txt
+[0.365s] writing entry points to franky_ros.egg-info/entry_points.txt
+[0.365s] writing requirements to franky_ros.egg-info/requires.txt
+[0.365s] writing top-level names to franky_ros.egg-info/top_level.txt
+[0.365s] reading manifest file 'franky_ros.egg-info/SOURCES.txt'
+[0.365s] writing manifest file 'franky_ros.egg-info/SOURCES.txt'
+[0.366s] running build_ext
+[0.366s] Creating /home/user/franka-docker/franka_ws/install/franky_ros/lib/python3.10/site-packages/franky-ros.egg-link (link to .)
+[0.366s] Installing franky_bridge script to /home/user/franka-docker/franka_ws/install/franky_ros/lib/franky_ros
+[0.367s] Installing franky_test script to /home/user/franka-docker/franka_ws/install/franky_ros/lib/franky_ros
+[0.367s] 
+[0.367s] Installed /home/user/franka-docker/franka_ws/build/franky_ros
+[0.367s] running symlink_data
+[0.379s] Invoked command in '/home/user/franka-docker/franka_ws/build/franky_ros' returned '0': PYTHONPATH=/home/user/franka-docker/franka_ws/build/franky_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/franka-docker/franka_ws/install/franky_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/user/franka-docker/franka_ws/build/franky_ros/build --no-deps symlink_data

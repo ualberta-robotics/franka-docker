@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from franky_msgs/srv/BlockingGripperGrasp.srv
+// generated code does not contain a copyright notice
+
+#include "franky_msgs/msg/GripperGrasp.idl"
+
+module franky_msgs {
+  module srv {
+    struct BlockingGripperGrasp_Request {
+      franky_msgs::msg::GripperGrasp target;
+    };
+    struct BlockingGripperGrasp_Response {
+      boolean success;
+    };
+  };
+};

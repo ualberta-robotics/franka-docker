@@ -1,0 +1,1 @@
+/home/user/franka-docker/franka_ws/build/franky_msgs/ament_cmake_environment_hooks/local_setup.bash

@@ -1,0 +1,3 @@
+float64 velocity_limit
+float64 acceleration_limit
+float64 jerk_limit

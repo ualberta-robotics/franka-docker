@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from franky_msgs/msg/JointMove.msg
+// generated code does not contain a copyright notice
+
+
+module franky_msgs {
+  module msg {
+    struct JointMove {
+      @verbatim (language="comment", text=
+        "if true, move relative to current position")
+      boolean relative;
+
+      @verbatim (language="comment", text=
+        "radians")
+      sequence<double> positions;
+    };
+  };
+};

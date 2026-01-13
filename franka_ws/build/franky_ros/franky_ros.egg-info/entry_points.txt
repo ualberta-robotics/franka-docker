@@ -1,0 +1,4 @@
+[console_scripts]
+franky_bridge = franky_ros.franky_bridge:main
+franky_test = franky_ros.franky_test:main
+

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating franky_ros.egg-info
+writing franky_ros.egg-info/PKG-INFO
+writing dependency_links to franky_ros.egg-info/dependency_links.txt
+writing entry points to franky_ros.egg-info/entry_points.txt
+writing requirements to franky_ros.egg-info/requires.txt
+writing top-level names to franky_ros.egg-info/top_level.txt
+writing manifest file 'franky_ros.egg-info/SOURCES.txt'
+reading manifest file 'franky_ros.egg-info/SOURCES.txt'
+writing manifest file 'franky_ros.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/user/franka-docker/franka_ws/install/franky_ros/lib/python3.10/site-packages/franky-ros.egg-link (link to .)
+Installing franky_bridge script to /home/user/franka-docker/franka_ws/install/franky_ros/lib/franky_ros
+Installing franky_test script to /home/user/franka-docker/franka_ws/install/franky_ros/lib/franky_ros
+
+Installed /home/user/franka-docker/franka_ws/build/franky_ros
+running symlink_data
+creating /home/user/franka-docker/franka_ws/install/franky_ros/share/ament_index
+creating /home/user/franka-docker/franka_ws/install/franky_ros/share/ament_index/resource_index
+creating /home/user/franka-docker/franka_ws/install/franky_ros/share/ament_index/resource_index/packages
+error: can't copy '/home/user/franka-docker/franka_ws/build/franky_ros/resource/franky_ros': doesn't exist or not a regular file

@@ -1,0 +1,89 @@
+// generated from rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em
+// with input from franky_msgs:srv/BlockingGripperGrasp.idl
+// generated code does not contain a copyright notice
+#ifndef FRANKY_MSGS__SRV__DETAIL__BLOCKING_GRIPPER_GRASP__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+#define FRANKY_MSGS__SRV__DETAIL__BLOCKING_GRIPPER_GRASP__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_
+
+
+#include <stddef.h>
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "franky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+size_t get_serialized_size_franky_msgs__srv__BlockingGripperGrasp_Request(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+size_t max_serialized_size_franky_msgs__srv__BlockingGripperGrasp_Request(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, franky_msgs, srv, BlockingGripperGrasp_Request)();
+
+#ifdef __cplusplus
+}
+#endif
+
+// already included above
+// #include <stddef.h>
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "franky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+size_t get_serialized_size_franky_msgs__srv__BlockingGripperGrasp_Response(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+size_t max_serialized_size_franky_msgs__srv__BlockingGripperGrasp_Response(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, franky_msgs, srv, BlockingGripperGrasp_Response)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "franky_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_franky_msgs
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, franky_msgs, srv, BlockingGripperGrasp)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // FRANKY_MSGS__SRV__DETAIL__BLOCKING_GRIPPER_GRASP__ROSIDL_TYPESUPPORT_FASTRTPS_C_H_

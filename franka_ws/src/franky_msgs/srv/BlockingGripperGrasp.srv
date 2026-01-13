@@ -1,0 +1,3 @@
+franky_msgs/GripperGrasp target
+---
+bool success

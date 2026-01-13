@@ -1,0 +1,17 @@
+{
+  "package_name": "franky_msgs",
+  "non_idl_tuples": [
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/CartesianMove.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/CartesianVelocity.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/JointMove.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/JointVelocity.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/GripperState.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/GripperMove.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:msg/GripperGrasp.msg",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:srv/SetDynamicsFactor.srv",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:srv/BlockingCartesianMove.srv",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:srv/BlockingJointMove.srv",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:srv/BlockingGripperMove.srv",
+    "/home/user/franka-docker/franka_ws/src/franky_msgs:srv/BlockingGripperGrasp.srv"
+  ]
+}

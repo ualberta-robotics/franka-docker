@@ -1,0 +1,1 @@
+/home/user/franka-docker/franka_ws/build/franky_msgs/rosidl_generator_py/franky_msgs/srv/__init__.py

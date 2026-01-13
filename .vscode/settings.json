@@ -1,0 +1,14 @@
+{
+    "python.analysis.stubPath": "/home/user/pybind11_stubs/pylibfranka",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/openrobots/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "${workspaceFolder}/franka_ws/install/local_setup.bash",
+        "${workspaceFolder}/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages",
+        "/home/user/pybind11_stubs/pylibfranka"
+    ],
+}

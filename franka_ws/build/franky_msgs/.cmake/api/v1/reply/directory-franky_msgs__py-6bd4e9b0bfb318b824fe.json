@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "franky_msgs__py",
+		"source" : "/home/user/franka-docker/franka_ws/build/franky_msgs/franky_msgs__py"
+	}
+}

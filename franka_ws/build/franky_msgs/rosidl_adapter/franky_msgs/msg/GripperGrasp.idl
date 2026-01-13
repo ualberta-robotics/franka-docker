@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from franky_msgs/msg/GripperGrasp.msg
+// generated code does not contain a copyright notice
+
+
+module franky_msgs {
+  module msg {
+    struct GripperGrasp {
+      @verbatim (language="comment", text=
+        "0 = closed, 0.08 = open")
+      double width;
+
+      @verbatim (language="comment", text=
+        "m/s e.g. 0.05")
+      double speed;
+
+      @verbatim (language="comment", text=
+        "N, e.g. 20")
+      double force;
+
+      @verbatim (language="comment", text=
+        "These commands determine whether the \"grasp\" is successful based on" "\n"
+        "the final gripper width after the grasp attempt." "\n"
+        "Set these low if you care about specific objects, or high if you want it to" "\n"
+        "return successful even with variations in object size." "\n"
+        "m")
+      double epsilon_inner;
+
+      @verbatim (language="comment", text=
+        "m")
+      double epsilon_outer;
+    };
+  };
+};

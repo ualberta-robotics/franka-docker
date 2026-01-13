@@ -1,0 +1,4 @@
+source;share/franky_msgs/environment/ament_prefix_path.sh
+source;share/franky_msgs/environment/library_path.sh
+source;share/franky_msgs/environment/path.sh
+source;share/franky_msgs/environment/pythonpath.sh
