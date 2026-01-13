@@ -1,1 +1,0 @@
-/home/user/franka-docker/franka_ws/src/franky_node/setup.py

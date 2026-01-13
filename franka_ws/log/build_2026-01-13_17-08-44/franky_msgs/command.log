@@ -1,2 +1,0 @@
-Invoking command in '/home/user/franka-docker/franka_ws/build/franky_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/franka-docker/franka_ws/install/franky_ros:/opt/ros/humble /usr/bin/cmake --build /home/user/franka-docker/franka_ws/build/franky_msgs -- -j24 -l24
-Invoked command in '/home/user/franka-docker/franka_ws/build/franky_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/franka-docker/franka_ws/install/franky_ros:/opt/ros/humble /usr/bin/cmake --build /home/user/franka-docker/franka_ws/build/franky_msgs -- -j24 -l24

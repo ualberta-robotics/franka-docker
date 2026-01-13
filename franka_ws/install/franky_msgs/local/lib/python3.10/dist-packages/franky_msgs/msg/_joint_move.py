@@ -1,1 +1,0 @@
-/home/user/franka-docker/franka_ws/build/franky_msgs/rosidl_generator_py/franky_msgs/msg/_joint_move.py

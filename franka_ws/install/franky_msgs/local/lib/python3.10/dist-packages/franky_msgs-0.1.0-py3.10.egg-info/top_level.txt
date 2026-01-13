@@ -1,1 +1,0 @@
-/home/user/franka-docker/franka_ws/build/franky_msgs/ament_cmake_python/franky_msgs/franky_msgs.egg-info/top_level.txt

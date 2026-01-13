@@ -1,4 +1,0 @@
-[console_scripts]
-franky_bridge = franky_ros.franky_ros_bridge:main
-franky_test = franky_ros.franky_test_client:main
-

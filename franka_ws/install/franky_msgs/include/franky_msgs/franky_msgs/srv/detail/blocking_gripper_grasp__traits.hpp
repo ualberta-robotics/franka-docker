@@ -1,1 +1,0 @@
-/home/user/franka-docker/franka_ws/build/franky_msgs/rosidl_generator_cpp/franky_msgs/srv/detail/blocking_gripper_grasp__traits.hpp

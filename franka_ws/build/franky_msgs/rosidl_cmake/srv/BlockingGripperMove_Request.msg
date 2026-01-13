@@ -1,1 +1,0 @@
-franky_msgs/GripperMove target
