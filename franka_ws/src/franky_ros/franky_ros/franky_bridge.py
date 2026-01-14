@@ -181,11 +181,11 @@ class FrankyRosBridge(Node):
         self.joint_pub.publish(js_msg)
 
         # Gripper State
-        grip_state = self.gripper.state
-        grip_msg = GripperState()
-        grip_msg.width = grip_state.width
-        grip_msg.is_grasped = grip_state.is_grasped
-        self.gripper_state_publisher.publish(grip_msg)
+        #grip_state = self.gripper.state
+        #grip_msg = GripperState()
+        #grip_msg.width = grip_state.width
+        #grip_msg.is_grasped = grip_state.is_grasped
+        #self.gripper_state_publisher.publish(grip_msg)
 
         # --- B. Compute Cartesian Pose ---
         m = np.array(state.O_T_EE.matrix).reshape(4, 4, order="F")
@@ -283,7 +283,11 @@ class FrankyRosBridge(Node):
                 else franky.ReferenceType.Absolute
             ),
         )
-        self.robot.move(movement, asynchronous=True)
+        try:
+            self.robot.move(movement, asynchronous=True)
+        except Exception as e:
+            self.get_logger().error(f"cartesian pose move failed: {str(e)}")
+            self.robot.recover_from_errors()
 
     def cart_vel_callback(self, msg: CartesianVelocity):
         movement = franky.CartesianVelocityMotion(
@@ -353,6 +357,9 @@ class FrankyRosBridge(Node):
             f"Gripper: Moving to width {msg.width}m at speed {msg.speed}m/s"
         )
         self.gripper.move_async(msg.width, msg.speed)
+        self.get_logger().info(
+            "after async"
+        )
 
     def gripper_grasp_callback(self, msg: GripperGrasp):
         self.get_logger().info(f"Gripper: Grasping at width {msg.width}m")

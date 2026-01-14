@@ -59,17 +59,18 @@ class FrankyXboxControl(Node):
             self.pub_cart_pose.publish(msg)
 
         # 3. Gripper (Triggers)
-        grip_change = 0.0
-        if self.joy.axes[5] < -0.5: grip_change = -0.001
-        elif self.joy.axes[2] < -0.5: grip_change = 0.001
+        if self.joy.axes[5] < -0.5: grip_width = 0.0
+        elif self.joy.axes[2] < -0.5: grip_width = 0.08
+        else: grip_width = self.grip_width
 
-        if grip_change != 0.0:
-            self.grip_width += grip_change
-            self.grip_width = max(0.0, min(0.08, self.grip_width))
+        if grip_width != self.grip_width:
+            # self.grip_width += grip_change
+            # self.grip_width = max(0.0, min(0.08, self.grip_width))
+            self.grip_width = grip_width
             
             g_msg = GripperMove()
-            g_msg.width = float(self.grip_width)
-            g_msg.speed = 0.05
+            g_msg.width = float(grip_width)
+            g_msg.speed = 0.1
             self.pub_gripper.publish(g_msg)
 
 

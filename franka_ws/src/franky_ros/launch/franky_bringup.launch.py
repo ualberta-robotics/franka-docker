@@ -24,12 +24,12 @@ def generate_launch_description():
     )
     accel_limit_arg = DeclareLaunchArgument(
         "acceleration_limit",
-        default_value="0.1",
+        default_value="0.05",
         description="Acceleration limit for the robot (0.0 - 1.0)",
     )
     jerk_limit_arg = DeclareLaunchArgument(
         "jerk_limit",
-        default_value="0.15",
+        default_value="0.1",
         description="Jerk limit for the robot (0.0 - 1.0)",
     )
 
