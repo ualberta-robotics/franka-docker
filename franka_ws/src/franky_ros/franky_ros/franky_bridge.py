@@ -181,11 +181,11 @@ class FrankyRosBridge(Node):
         self.joint_pub.publish(js_msg)
 
         # Gripper State
-        #grip_state = self.gripper.state
-        #grip_msg = GripperState()
-        #grip_msg.width = grip_state.width
-        #grip_msg.is_grasped = grip_state.is_grasped
-        #self.gripper_state_publisher.publish(grip_msg)
+        grip_state = self.gripper.state
+        grip_msg = GripperState()
+        grip_msg.width = grip_state.width
+        grip_msg.is_grasped = grip_state.is_grasped
+        self.gripper_state_publisher.publish(grip_msg)
 
         # --- B. Compute Cartesian Pose ---
         m = np.array(state.O_T_EE.matrix).reshape(4, 4, order="F")

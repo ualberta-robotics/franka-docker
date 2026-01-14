@@ -1,6 +1,7 @@
 build-essential 
 cmake 
 git 
+tmux
 libpoco-dev 
 libeigen3-dev 
 libfmt-dev
