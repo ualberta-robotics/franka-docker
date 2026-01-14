@@ -21,7 +21,16 @@ TODOs:
 - Testing on a lot of interactions in the ROS2 node (e.g. interactions between calling blocking and non blocking funcs in succession)
 
 
-# NOTES
+## Using the Franka
+1. Power on the Franka
+2. Go to 192.168.1.105/desk to access the UI, but don't take control unless you need to
+3. Build repo with `colcon build --symlink-install` in the `franka_ws` folder. Then `source install/setup.bash`.
+4. To get control over code, use the `enable_fci.py` script.
+5. From there, you can start the ros node with `ros2 launch franky_ros franky_bringup.launch.py`
+6. To power off Franka, use desk.
+
+
+## NOTES
 franka_docker script with a franky_bringup.launch.py which is pretty much the same as kinova
 
 right now it really only works with loki due to fask ping.
