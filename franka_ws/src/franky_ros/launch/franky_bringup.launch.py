@@ -50,6 +50,12 @@ def generate_launch_description():
         output="screen",
     )
 
+    joy = Node(
+        package="joy",  # Ensure this matches your package name in setup.py
+        executable="joy_node",
+        name="joy_node",
+    )
+
     return LaunchDescription(
         [
             robot_ip_arg,
@@ -58,5 +64,6 @@ def generate_launch_description():
             accel_limit_arg,
             jerk_limit_arg,
             franky_ros,
+            joy,
         ]
     )

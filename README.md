@@ -19,3 +19,63 @@ If you prefer functionality similar to the Kinova, where all you need is a pytho
 TODOs:
 - Bring in franka description urdf for better TF tree publishing
 - Testing on a lot of interactions in the ROS2 node (e.g. interactions between calling blocking and non blocking funcs in succession)
+
+
+# NOTES
+franka_docker script with a franky_bringup.launch.py which is pretty much the same as kinova
+
+right now it really only works with loki due to fask ping.
+Probably because it is connected with ethernet.
+
+TODO: fix for robotvision and odin
+
+docker compose up the attach.
+
+once inside cd ~/franka-docker
+
+
+
+to build you need to 
+```bash
+colcon build --symlink-install
+souce install/setup.bash
+```
+
+the symlink thing is needed for ros2 to actually update stuff
+
+there is test scripts which you need to unlock for the robot to work. NOTE: make sure to lock when shutting down.
+```bash
+python3 ~/franka-docker/test_scripts/enable_fci.py
+```
+
+to run launch do dis
+
+```bash
+ros2 launch franky_ros franky_bringup.launch.py
+```
+
+running test node
+```bash
+ros2 run franky_ros franky_test
+```
+
+
+running xbox control node
+
+first find the event of the xbox
+```bash
+cat /proc/bus/input/devices | grep -B 5 -A 5 "Microsoft X-Box"
+```
+update the compose so that it passes this event through
+make sure the event has 
+```bash
+crw-rw-rw-  1 root  995 13, 84 Jan 14 00:15 event20
+```
+you can see that the ros sees the device with 
+```bash
+ros2 run joy joy_enumerate_devices
+```
+
+```bash
+ros2 run franky_ros franky_xbox
+```

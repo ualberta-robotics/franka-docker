@@ -26,6 +26,7 @@ setup(
             # executable_name = package.filename:main_function
             "franky_bridge = franky_ros.franky_bridge:main",
             "franky_test = franky_ros.franky_test:main",
+            "franky_xbox = franky_ros.franky_xbox_control:main",
         ],
     },
 )

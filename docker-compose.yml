@@ -10,6 +10,9 @@ services:
     network_mode: "host"
     privileged: true
     command: /bin/bash
+    devices:
+      - "/dev/input/js0:/dev/input/js0"
+      - "/dev/input/event20:/dev/input/event20" # might change
     tty: true
     stdin_open: true
     volumes:
