@@ -11,5 +11,4 @@
         "${workspaceFolder}/franka_ws/install/franky_msgs/local/lib/python3.10/dist-packages",
         "/home/user/pybind11_stubs/pylibfranka"
     ],
-    "cmake.sourceDirectory": "/home/user/franka-docker/franka_ws/src/franky_msgs",
 }

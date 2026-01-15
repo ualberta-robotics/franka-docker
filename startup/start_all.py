@@ -18,8 +18,8 @@ if __name__ == "__main__":
     # terminals for the simulation to start
 
     terminals = {
-        "rqt": "rqt",
-        "rviz": "rviz2",
+        "rqt": "rqt --perspective-file /home/user/franka-docker/startup/default.perspective",
+        "rviz": "rviz2 -d /home/user/franka-docker/startup/pc.rviz",
         "franky_bringup": "ros2 launch franky_ros franky_bringup.launch.py",
         "realsense": "ros2 launch realsense_config pointcloud_rs.launch.py",
         "xbox_control": "ros2 launch franky_ros franky_xbox.launch.py",
