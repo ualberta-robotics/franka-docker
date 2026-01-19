@@ -44,6 +44,20 @@ class FrankyRosBridge(Node):
         max_jerk = self.get_parameter("max_jerk").get_parameter_value().double_value
 
         self.get_logger().info(f"Connecting to fr3 and Gripper at {robot_ip}...")
+
+        robot_web_session = franky.RobotWebSession(robot_ip, "jagersand", "jagersand")
+        robot_web_session.open()
+        if not robot_web_session.has_control():
+            self.get_logger().info("Taking control of the robot...")
+            try:
+                robot_web_session.take_control(wait_timeout=10.0)
+            except franky.TakeControlTimeoutError:
+                robot_web_session.take_control(wait_timeout=30.0, force=True)
+        self.get_logger().info("Unlocking brakes and enabling FCI...")
+        robot_web_session.unlock_brakes()
+        robot_web_session.enable_fci()
+
+        self.get_logger().info("Establishing hardware connection...")
         try:
             rt_conf = (
                 franky.RealtimeConfig.Enforce
@@ -257,14 +271,22 @@ class FrankyRosBridge(Node):
                 else franky.ReferenceType.Absolute
             ),
         )
-        self.robot.move(movement, asynchronous=True)
+        try:
+            self.robot.move(movement, asynchronous=True)
+        except Exception as e:
+            self.get_logger().error(f"joint position move failed: {str(e)}")
+            self.robot.recover_from_errors()
 
     def joint_vel_callback(self, msg: JointVelocity):
         """Executes joint velocity motion using a simple list of floats."""
         movement = franky.JointVelocityMotion(
             target=list(msg.vels), duration=franky.Duration(msg.duration_millis)
         )
-        self.robot.move(movement, asynchronous=True)
+        try:
+            self.robot.move(movement, asynchronous=True)
+        except Exception as e:
+            self.get_logger().error(f"joint velocity move failed: {str(e)}")
+            self.robot.recover_from_errors()
 
     def cart_pose_callback(self, msg: CartesianMove):
 
@@ -294,7 +316,11 @@ class FrankyRosBridge(Node):
             target=franky.Twist(list(msg.twist)[:3], list(msg.twist)[3:]),
             duration=franky.Duration(msg.duration_millis),
         )
-        self.robot.move(movement, asynchronous=True)
+        try:
+            self.robot.move(movement, asynchronous=True)
+        except Exception as e:
+            self.get_logger().error(f"cartesian velocity move failed: {str(e)}")
+            self.robot.recover_from_errors()
 
     def move_joints_sync_callback(
         self, request: BlockingJointMove.Request, response: BlockingJointMove.Response
@@ -357,9 +383,7 @@ class FrankyRosBridge(Node):
             f"Gripper: Moving to width {msg.width}m at speed {msg.speed}m/s"
         )
         self.gripper.move_async(msg.width, msg.speed)
-        self.get_logger().info(
-            "after async"
-        )
+        self.get_logger().info("after async")
 
     def gripper_grasp_callback(self, msg: GripperGrasp):
         self.get_logger().info(f"Gripper: Grasping at width {msg.width}m")
