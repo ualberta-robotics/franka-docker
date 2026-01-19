@@ -31,17 +31,12 @@ TODOs:
 
 
 ## NOTES
-franka_docker script with a franky_bringup.launch.py which is pretty much the same as kinova
+TODO: fix for robotvision and odin, not just loki
 
-right now it really only works with loki due to fask ping.
-Probably because it is connected with ethernet.
-
-TODO: fix for robotvision and odin
-
-docker compose up the attach.
-
-once inside cd ~/franka-docker
-
+once inside docker container
+```bash
+cd /home/user/franka-docker
+```
 
 
 to build you need to 
@@ -57,7 +52,7 @@ there is test scripts which you need to unlock for the robot to work. NOTE: make
 python3 ~/franka-docker/test_scripts/enable_fci.py
 ```
 
-to run launch do dis
+to run anything for franka you will probably need to run this
 
 ```bash
 ros2 launch franky_ros franky_bringup.launch.py
@@ -86,5 +81,5 @@ ros2 run joy joy_enumerate_devices
 ```
 
 ```bash
-ros2 run franky_ros franky_xbox
+ros2 launch franky_ros franky_bringup.launch.py
 ```

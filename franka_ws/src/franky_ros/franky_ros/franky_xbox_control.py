@@ -83,15 +83,13 @@ class FrankyXboxControl(Node):
             grip_width = self.grip_width
 
         if grip_width != self.grip_width:
-            # self.grip_width += grip_change
-            # self.grip_width = max(0.0, min(0.08, self.grip_width))
             self.grip_width = grip_width
 
             # g_msg = GripperMove()
             g_msg = GripperGrasp()
             g_msg.width = float(grip_width)
             g_msg.speed = 0.1
-            g_msg.force = 20.0
+            g_msg.force = 0.01
             g_msg.epsilon_inner = 0.3
             g_msg.epsilon_outer = 0.3
             self.pub_gripper.publish(g_msg)

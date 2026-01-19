@@ -24,6 +24,8 @@ from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from scipy.spatial.transform import Rotation
 from sensor_msgs.msg import JointState
+from time import sleep
+import panda_py
 
 
 class FrankyRosBridge(Node):
@@ -45,21 +47,11 @@ class FrankyRosBridge(Node):
 
         self.get_logger().info(f"Connecting to fr3 and Gripper at {robot_ip}...")
 
-        self.robot_web_session = franky.RobotWebSession(
-            robot_ip, "jagersand", "jagersand"
-        )
-        self.robot_web_session.open()
-        if not self.robot_web_session.has_control():
-            try:
-                self.robot_web_session.take_control(wait_timeout=10)
-            except franky.TakeControlTimeoutError as e:
-                self.robot_web_session.take_control(wait_timeout=30, force=True)
-
-        self.get_logger().info(
-            "Control of the robot acquired. Unlocking brakes, enabling FCI."
-        )
-        self.robot_web_session.enable_fci()
-        self.robot_web_session.unlock_brakes()
+        self.desk = panda_py.Desk(robot_ip, "jagersand", "jagersand", platform="fr3")
+        self.desk.take_control(force=True)
+        self.get_logger().info(str(self.desk.has_control()))
+        self.desk.unlock()
+        self.desk.activate_fci()
 
         self.get_logger().info("Establishing hardware connection...")
         try:
