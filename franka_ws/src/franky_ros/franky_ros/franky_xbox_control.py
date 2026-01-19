@@ -91,9 +91,9 @@ class FrankyXboxControl(Node):
             g_msg = GripperGrasp()
             g_msg.width = float(grip_width)
             g_msg.speed = 0.1
-            g_msg.force = 20.0  # N
-            g_msg.epsilon_inner = 0.2
-            g_msg.epsilon_outer = 0.2
+            g_msg.force = 20.0
+            g_msg.epsilon_inner = 0.3
+            g_msg.epsilon_outer = 0.3
             self.pub_gripper.publish(g_msg)
 
 

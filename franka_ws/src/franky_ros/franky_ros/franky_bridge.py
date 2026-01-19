@@ -45,17 +45,21 @@ class FrankyRosBridge(Node):
 
         self.get_logger().info(f"Connecting to fr3 and Gripper at {robot_ip}...")
 
-        robot_web_session = franky.RobotWebSession(robot_ip, "jagersand", "jagersand")
-        robot_web_session.open()
-        if not robot_web_session.has_control():
-            self.get_logger().info("Taking control of the robot...")
+        self.robot_web_session = franky.RobotWebSession(
+            robot_ip, "jagersand", "jagersand"
+        )
+        self.robot_web_session.open()
+        if not self.robot_web_session.has_control():
             try:
-                robot_web_session.take_control(wait_timeout=10.0)
-            except franky.TakeControlTimeoutError:
-                robot_web_session.take_control(wait_timeout=30.0, force=True)
-        self.get_logger().info("Unlocking brakes and enabling FCI...")
-        robot_web_session.unlock_brakes()
-        robot_web_session.enable_fci()
+                self.robot_web_session.take_control(wait_timeout=10)
+            except franky.TakeControlTimeoutError as e:
+                self.robot_web_session.take_control(wait_timeout=30, force=True)
+
+        self.get_logger().info(
+            "Control of the robot acquired. Unlocking brakes, enabling FCI."
+        )
+        self.robot_web_session.enable_fci()
+        self.robot_web_session.unlock_brakes()
 
         self.get_logger().info("Establishing hardware connection...")
         try:
@@ -439,6 +443,7 @@ def main(args=None):
         executor.spin()
     except KeyboardInterrupt:
         node.robot.stop()
+        node.robot_web_session.release_control()
     finally:
         node.destroy_node()
         rclpy.shutdown()

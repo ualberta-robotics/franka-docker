@@ -1,11 +1,11 @@
 {
     "name": "Franka Development Container",
     "privileged": true,
-    "remoteUser": "user",
+    // "remoteUser": "root",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "franka-docker",
     "workspaceFolder": "/home/user/franka-docker",
-    "initializeCommand": "echo \"USER_UID=$(id -u $USER)\nUSER_GID=$(id -g $USER)\" > .env",
+    // "initializeCommand": "echo \"USER_UID=$(id -u $USER)\nUSER_GID=$(id -g $USER)\" > .env",
     "customizations": {
         "vscode": {
             "extensions": [

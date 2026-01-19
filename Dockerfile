@@ -1,6 +1,7 @@
 # Start with an official ROS 2 base image for the desired distribution
 FROM osrf/ros:humble-desktop-full
-
+ARG USER=user
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive \
@@ -8,15 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     LC_ALL=C.UTF-8 \
     ROS_DISTRO=humble
 
-ARG USER_UID=1003
-ARG USER_GID=1003
-ARG USERNAME=user
 SHELL ["/bin/bash", "-c"] 
-
-# Setup user configuration
-RUN groupadd --gid $USER_GID $USERNAME \
-    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    && echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers 
 
 COPY requirements.txt requirements.txt
 COPY packages.txt packages.txt
@@ -75,38 +68,18 @@ RUN mkdir -p /etc/apt/keyrings && \
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install -r requirements.txt
 
-RUN python3 -m pybind11_stubgen pylibfranka -o /home/$USERNAME/pybind11_stubs/pylibfranka
+RUN python3 -m pybind11_stubgen pylibfranka -o /home/user/pybind11_stubs/pylibfranka
 
-RUN echo "export PATH=/opt/openrobots/bin:$PATH" >> /home/$USERNAME/.bashrc
-RUN echo "export PKG_CONFIG_PATH=/opt/openrobots/lib/pkgconfig:$PKG_CONFIG_PATH" >> /home/$USERNAME/.bashrc
-RUN echo "export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH" >> /home/$USERNAME/.bashrc
-RUN echo "export PYTHONPATH=/opt/openrobots/lib/python3.10/site-packages:$PYTHONPATH" >> /home/$USERNAME/.bashrc
-RUN echo "export CMAKE_PREFIX_PATH=/opt/openrobots:$CMAKE_PREFIX_PATH" >> /home/$USERNAME/.bashrc
-RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /home/$USERNAME/.bashrc \
-    && echo "source ~/franka-docker/franka_ws/install/setup.bash" >> /home/$USERNAME/.bashrc \
-    && echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> /home/$USERNAME/.bashrc
+RUN echo "export PATH=/opt/openrobots/bin:$PATH" >> ~/.bashrc
+RUN echo "export PKG_CONFIG_PATH=/opt/openrobots/lib/pkgconfig:$PKG_CONFIG_PATH" >> ~/.bashrc
+RUN echo "export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
+RUN echo "export PYTHONPATH=/opt/openrobots/lib/python3.10/site-packages:$PYTHONPATH" >> ~/.bashrc
+RUN echo "export CMAKE_PREFIX_PATH=/opt/openrobots:$CMAKE_PREFIX_PATH" >> ~/.bashrc
+RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc \
+    && echo "source /home/user/franka-docker/franka_ws/install/setup.bash" >> ~/.bashrc \
+    && echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
+RUN echo "alias die='tmux kill-session'" >> ~/.bashrc
 
-USER $USERNAME
-
-# Set workspace under repo folder
-# WORKDIR /home/$USERNAME/franka-docker/franka_ws
-
-# # Copy repository content
-# COPY . /home/$USERNAME/franka-docker
-
-# # chown stuff and update package info
-# RUN sudo chown -R $USERNAME:$USERNAME /home/$USERNAME/franka-docker/franka_ws \
-#     && sudo apt-get update \
-#     && rosdep update
-
-# # Copy entrypoint
-# COPY ./scripts/franka_entrypoint.sh /franka_entrypoint.sh
-# RUN sudo chmod +x /franka_entrypoint.sh
-
-# # Set default shell and entrypoint
-# SHELL [ "/bin/bash", "-c" ]
-# ENTRYPOINT [ "/franka_entrypoint.sh" ]
-# CMD [ "/bin/bash" ]
-
-# # Ensure container starts in workspace
-# WORKDIR /home/$USERNAME/franka-docker
+# formats terminal to look normal, but with a red (fr3-docker) prefix to indicate docker environment
+RUN sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/' ~/.bashrc
+RUN echo "export PS1='\[\e[1;31m\](fr3-docker) \e[1;32m\]\u@\h\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\$ '" >> /root/.bashrc
