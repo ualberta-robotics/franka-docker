@@ -12,3 +12,4 @@ panda-python
 franky-control
 pybind11-stubgen
 scipy
+unzip
