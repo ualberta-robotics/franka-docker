@@ -1,5 +1,6 @@
 services:
   franka-docker:
+    image: franka-docker:${USER}
     build:
       context: .
       dockerfile: Dockerfile

@@ -41,11 +41,8 @@ ENV CMAKE_PREFIX_PATH="/opt/openrobots:${CMAKE_PREFIX_PATH}"
 
 # sergey nvim stuff :)
 RUN git clone https://github.com/sergey-khl/bear_ide.git \
-    && mkdir /root/.local \
-    && mkdir /root/.local/bin \
-    && mkdir /root/.config \
     && cd bear_ide \
-    && ./install.sh \
+    && ./install.sh
 
 # LibFranka
 RUN git clone --recurse-submodules https://github.com/frankarobotics/libfranka.git \
