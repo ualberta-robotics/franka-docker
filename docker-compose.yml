@@ -3,7 +3,7 @@ services:
     image: franka-docker:${USER}
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.cuda
     container_name: franka-docker
     network_mode: "host"
     privileged: true
